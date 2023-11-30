@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 폼</title>
+</head>
+
+<body>
+    <main>
+        <h1>자주 사용되는 &lt;input&gt;&lt;&#47;input&gt; 요소</h1>
+
+        <form action="/check">
+            <p>
+                <input type="checkbox" name="check">
+                <label for="check">[필수]이건 동의하셔야 합니다.</label><br>
+                <input type="checkbox" name="check">
+                <label for="check">[선택]이건 해도되고 안해도 됩니다.</label>
+                <br>ㄴ 체크박스를 생성한다. 여러개 선택 가능하다.
+            </p>
+
+        </form>
+        <form action="https://www.google.com/search">
+            <p>
+                <label for="q">여기서도 구글 검색이 가능합니다</label>
+                <input type="text" id="search" name="q" placeholder="search">
+                <button placeholder="검색">검색</button>
+                <br>ㄴ 입력받은 텍스트를 구글 search 서버 주소로 전달하여 검색이 가능하다.
+            </p>
+            <hr>
+        </form>
+
+        <form action="/size">
+            <p>
+                <label for="size">사이즈를 선택해주세요</label><br>
+                <input type="radio" name="size" id="L" value="L">
+                <label for="L">L</label>
+                <input type="radio" name="size" id="XL" value="XL">
+                <label for="XL">XL</label>
+                <input type="radio" name="size" id="XXL" value="XXL">
+                <label for="XXL">XXL</label>
+                <button>Select</button>
+                <br>ㄴ radio로 선택지 중 하나만을 선택할 수 있다.
+            </p>
+            <hr>
+        </form>
+
+        <form action="/blood_type">
+            <p>
+                <label for="blood_type">혈액형을 선택해주세요.</label>
+                <select name="blood_type" id="blood_type">
+                    <option value="A">A</option>
+                    <option value="A">B</option>
+                    <option value="A">O</option>
+                    <option value="A">AB</option>
+                </select>
+                <button>Submit</button>
+                <br>ㄴ select로 목록을 생성하고, option으로 여러가지 항목을 만들어 여러 선택지가 한 번에 생성된다.
+            </p>
+            <hr>
+        </form>
+
+        <form action="/volume">
+            <label for="volume">볼륨 조절이 가능합니다.</label>
+            <input type="range" id="volume" name="volume" min="0" max="100" step="5" value="0">
+            <br>ㄴ 값을 슬라이더로 조절할 수 있는 range이다. 최소, 최대, 증감값, 초기값을 설정 가능하다.
+            <hr>
+        </form>
+
+        <form action="/menu">
+            <textarea name="menu" id="menu" cols="25" rows="10" placeholder="지금 먹고싶은 메뉴는??"></textarea>
+            <label for="menu">지금 먹고싶은걸 입력해보세요</label>
+            <br>ㄴ 일반적인 텍스트 입력보다 더 큰 텍스트 박스이다.
+            <hr>
+        </form>
+
+    </main>
+
+</body>
+
+</html>
